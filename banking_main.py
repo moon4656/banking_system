@@ -41,7 +41,7 @@ def deposit_money():
 def withdraw_money():
     print('[출    금]')
     id = input('계좌ID: ')
-    withdraw_money = int(input('입금액: '))
+    withdraw_money = int(input('출금액: '))
 
     for ac in account_list:
         if not (id in ac.account_id):
