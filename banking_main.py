@@ -59,6 +59,7 @@ def show_all_account_information():
         print(f'계좌ID: {ac.account_id}')
         print(f'이    름: {ac.customer_name}')
         print(f'잔    액: {ac.balance}')
+
     
 
 def main():
@@ -75,8 +76,8 @@ def main():
             deposit_money()
         elif choice == 3:
             withdraw_money()
-        # elif choice == 4:
-        #     show_all_account_information()
+        elif choice == 4:
+            show_all_account_information()
         elif choice == 5:
             print("프로그램을 종료합니다.")
             break
