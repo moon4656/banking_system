@@ -2,6 +2,7 @@
 from show_menu import show_menu
 from menu_input import menu_input
 from make_account import make_account
+from deposit_money import deposit_money
 
 account_list = []
 num_of_accounts = 0
