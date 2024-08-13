@@ -21,6 +21,21 @@ def make_account():
     account.deposit(amount)
     
     account_list.append(account)
+    num_of_accounts += 1
+
+
+def deposit_money():
+    print('[입    금]')
+    id = int(input('계좌ID: '))
+    deposit_money = int(input('입금액: '))
+
+    for ac in account_list:
+        if id in ac.account_id:
+            ac.balance += deposit_money
+            print('입금완료')
+            return
+    
+    print('유효하지 않는 ID입니다')
 
 def main():
     
