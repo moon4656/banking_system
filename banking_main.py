@@ -3,17 +3,18 @@ from show_menu import show_menu
 from menu_input import menu_input
 from account import Account
 
-
 account_list = []
 num_of_accounts = 0
 
 def make_account():
     
+    global num_of_accounts    
+    
     print("[계좌 개설]")
     print("계좌ID:")
     id = input()
     print("이  름:")
-    name = int(input())
+    name = input()
     print("입금액:")
     amount = int(input())
 
@@ -26,7 +27,7 @@ def make_account():
 
 def deposit_money():
     print('[입    금]')
-    id = int(input('계좌ID: '))
+    id = input('계좌ID: ')
     deposit_money = int(input('입금액: '))
 
     for ac in account_list:
@@ -39,8 +40,8 @@ def deposit_money():
 
 def withdraw_money():
     print('[출    금]')
-    id = int(input('계좌ID: '))
-    withdraw_money = int(input('입금액: '))
+    id = input('계좌ID: ')
+    withdraw_money = int(input('출금액: '))
 
     for ac in account_list:
         if not (id in ac.account_id):
