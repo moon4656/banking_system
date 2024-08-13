@@ -1,6 +1,5 @@
 
 from account import Account
-import banking_main
 
 def make_account():
     
@@ -15,5 +14,5 @@ def make_account():
     account = Account(id, name)
     account.deposit(amount)
     
-    banking_main.account_list.append(account)
+    account_list.append(account)
     

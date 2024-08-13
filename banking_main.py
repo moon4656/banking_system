@@ -1,11 +1,26 @@
 
 from show_menu import show_menu
 from menu_input import menu_input
-from make_account import make_account
-from deposit_money import deposit_money
+from account import Account
+
 
 account_list = []
 num_of_accounts = 0
+
+def make_account():
+    
+    print("[계좌 개설]")
+    print("계좌ID:")
+    id = input()
+    print("이  름:")
+    name = int(input())
+    print("입금액:")
+    amount = int(input())
+
+    account = Account(id, name)
+    account.deposit(amount)
+    
+    account_list.append(account)
 
 def main():
     
@@ -21,8 +36,8 @@ def main():
             deposit_money()
         elif choice == 3:
             withdraw_money()
-        elif choice == 4:
-            show_all_account_information()
+        # elif choice == 4:
+        #     show_all_account_information()
         elif choice == 5:
             print("프로그램을 종료합니다.")
             break
