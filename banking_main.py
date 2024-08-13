@@ -3,10 +3,10 @@ from show_menu import show_menu
 from menu_input import menu_input
 from make_account import make_account
 
+account_list = []
+num_of_accounts = 0
+
 def main():
-    
-    account_list = []
-    num_of_accounts = 0
     
     """Main function to run the banking system."""
     while True:
