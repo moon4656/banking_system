@@ -11,12 +11,9 @@ def make_account():
     global num_of_accounts    
     
     print("[계좌 개설]")
-    print("계좌ID:")
-    id = input()
-    print("이  름:")
-    name = input()
-    print("입금액:")
-    amount = int(input())
+    id = input("계좌ID:")
+    name = input("이  름:")
+    amount = int(input("입금액:"))
 
     account = Account(id, name)
     account.deposit(amount)
@@ -27,7 +24,7 @@ def make_account():
 
 def deposit_money():
     print('[입    금]')
-    id = input('계좌ID: ')
+    id = input('계좌ID:')
     deposit_money = int(input('입금액: '))
 
     for ac in account_list:
